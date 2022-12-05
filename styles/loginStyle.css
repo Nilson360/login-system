@@ -1,14 +1,16 @@
 @charset "utf-8";
-
-body{
-   margin: 10px;
-   padding: 10px;
+*{
+    margin: 0px;
+    padding: 0px;
 }
+
 .box{
-    background-color: grey;
-    margin: auto;
+    background-color: rgba(13, 154, 41, 0.49);
     width: 300px;
     padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    
 }
 .box .title{
     font-size: 20px;
@@ -22,20 +24,21 @@ body{
     border-radius: 5px;
     padding:4px;
     border: solid thin #aaa;
+    width: 100%;
 }
 
 .button input{
    padding: 5px;
     width: 100px;
-    color: #fff;
+    color: rgb(13, 1, 1);
     margin: 15px 0 12px 0;
-    background-color: lightblue;
+    background-color: rgb(242, 246, 11);
     border:none;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .box form .button input:hover{
-    background-color: aquamarine;
+    background-color: rgba(138, 11, 11, 0.735);
     transition: 0.3ms;
 }
