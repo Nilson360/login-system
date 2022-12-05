@@ -15,5 +15,7 @@ function check_login($con){
    header("Location: login.php");
    exit();
 }
-
+function random_num(){
+    return mt_rand(100000, 999999);
+}
 ?>

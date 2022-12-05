@@ -1,7 +1,22 @@
 <?php
     session_start();
-   include_once("./connections.php");
-   include_once("./functions/functions.php");
+   include("./connections.php");
+   include("./functions/functions.php");
+   if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $user_name= $_POST['user_name'];
+    $password= $_POST['password'];
+    if(!empty($user_name) && !empty($password)){
+
+        //save to database
+            $user_id = random_num(20);
+            $query ="insert into users (user_id,user_name, password) values('$user_id','$user_name','$password')";
+            mysqli_query($query,$user_id);
+            header("Location: login");
+            die();
+    } else{
+        echo "please enter some valide information";
+    }
+   }
 ?>
 
 <!DOCTYPE html>
