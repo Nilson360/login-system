@@ -1,4 +1,7 @@
 <?php
+    session_start();
+    
+    $_SESSION;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +12,8 @@
     <title>My System Login</title>
 </head>
 <body>
-    <h1>Wellcome, usermae</h1>
+    <a href="./user-login/logout.php">Logout</a>
+    <h1>Wellcomeon my website</h1>
+    <p>Hello, username</p>
 </body>
 </html>
